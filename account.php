@@ -56,17 +56,17 @@ if (isset($_SESSION['logged_in'])) {
     $user_orders = $stmt_orders->get_result();
 }
 
-$total_bayar = $_SESSION['total'];
+//$total_bayar = $_SESSION['total'];
 
-$kurs_dollar = 15722;
+$convert_dollar = 25304;
 
-function setRupiah($price)
+function setPrice($price)
 {
-    $result = "Rp" . number_format($price, 0, ',', '.');
+    $result = "" . number_format($price, 0, ',', '.')."₫";
     return $result;
 }
 ?>
-?>
+
 
 
 <?php
@@ -197,7 +197,7 @@ include('layouts/header.php');
                                     </td>
                                     <td class="product__cart__item">
                                         <div class="product__cart__item__text">
-                                            <?php echo setRupiah($order['order_cost'] * $kurs_dollar); ?>
+                                            <?php echo setPrice($order['order_cost'] * $convert_dollar); ?>
                                         </div>
                                     </td>
                                     <td class="product__cart__item">

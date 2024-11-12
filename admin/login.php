@@ -53,7 +53,7 @@ if (isset($_POST['login_btn'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Male Fashion - Login</title>
+    <title>Admin - Login</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -61,6 +61,7 @@ if (isset($_POST['login_btn'])) {
 
     <!-- Custom styles for this template-->
     <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/key-icon.svg" type="image/svg">
 
 </head>
 
@@ -72,7 +73,7 @@ if (isset($_POST['login_btn'])) {
             <div class="col-xl-6 col-lg-12 col-md-9">
 
                 <div class="card o-hidden border-0 shadow-lg my-5">
-                    <img class="card-img-top" src="../assets/img/weblogo.png" width="170px" height="170px" alt="Card image cap">
+                    <img class="card-img-top" src="../assets/img/mlogo.png" width="170px" height="170px" alt="Card image cap">
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">

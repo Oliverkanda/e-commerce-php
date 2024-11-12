@@ -38,11 +38,11 @@
         return $total;
     }
 
-    $kurs_dollar = 15722;
+    $convert_dollar = 25304;
 
-    function setRupiah($price)
+    function setPrice($price)
     {
-        $result = "Rp".number_format($price, 0, ',', '.');
+        $result = "".number_format($price, 0, ',', '.')."₫";
         return $result;
     }
 ?>
@@ -96,7 +96,7 @@
                                             </div>
                                             <div class="product__cart__item__text">
                                                 <h6><?php echo $row['product_name']; ?></h6>
-                                                <h5><?php echo setRupiah(($row['product_price'] * $kurs_dollar)); ?></h5>
+                                                <h5><?php echo setPrice(($row['product_price'] * $convert_dollar)); ?></h5>
                                             </div>
                                         </td>
                                         <td class="product__cart__item">
